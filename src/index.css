@@ -1,13 +1,12 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+body {
+  background-image: url("https://img.freepik.com/premium-photo/3d-rendering-mini-blue-house-arrange-blue-background-money-house-real-estate-investment-mortgage-concept_47274-359.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1712793600&semt=ais"  );
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+

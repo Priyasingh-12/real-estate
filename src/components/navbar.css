@@ -1,0 +1,137 @@
+header {
+  position: fixed;
+  width: 100%;
+  margin-top: 5px;
+}
+.header-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dark-mode .header {
+  background-color: #708083; 
+}
+
+@media screen and (min-width: 600px) {
+  .navbar-sm button {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(108, 181, 212);
+    padding: 0 2rem;
+  }
+  nav ul {
+    display: flex;
+    margin-left: 250px;
+  }
+  nav ul li {
+    list-style: none;
+    margin: 0 1rem;
+    padding: 0;
+    font-size: larger;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .header-right {
+    margin-left: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-right a{
+    color: var(--text-color);
+}
+
+.header-right-login {
+    margin-left: 20px;
+  display: flex;
+  gap: 14px;
+  text-align: right;
+  font-size: larger;
+  font-weight: 600;
+}
+.header-right-login Link:hover {
+  border-bottom: 1px solid black;
+}
+.header-right-login Link{
+text-decoration: none;
+list-style: none;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+  .navbar-sm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(108, 181, 212);
+  }
+  .navbar-sm button {
+    padding: 0.5rem;
+  }
+  nav {
+    background-color: rgb(8, 124, 174);
+    transition: all 0.3s ease-in-out;
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+  }
+  nav ul li {
+    list-style: none;
+    padding: 0.8rem 0;
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  .showNav {
+    transform: translate(100%);
+  }
+  .hideNav {
+    transform: translate(200%);
+  }
+  .dark-mode-toggle{
+    padding-top: 5px;
+    margin-right: 20px;
+}
+.dark-mode-toggle button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.dark-mode-toggle button:hover{
+    transform: scale(1.2);
+}
+.dark-mode-toggle png{
+    color: var(--icon-color);
+}
+.header-right a{
+    color: var(--text-color);
+}
+.header-right-login {
+  display: flex;
+  gap: 14px;
+}
+.header-right-login a:hover {
+  border-bottom: 1px solid black;
+}
+}
+
+@media screen and (max-width: 800px) {
+    .header-container {
+        justify-content: space-between;
+    }
+    nav {
+        display: none;
+    }
+    .header-right-login {
+        display: none;
+    }
+}
