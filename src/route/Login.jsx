@@ -1,48 +1,83 @@
-import { FaUser } from "react-icons/fa";
-import { FaUnlockAlt } from "react-icons/fa";
+import React, { useState } from 'react'
+import { FaFacebook } from 'react-icons/fa6'
+import { FaGoogle } from 'react-icons/fa'
+import { FaLinkedin } from 'react-icons/fa6'
+import { FaTwitter } from 'react-icons/fa'
+import './style.css' //
 
-import './login.css';
+function Login () {
+  const [isSignUp, setIsSignUp] = useState(false)
 
-const Login = () => {
   return (
-    <div className="full">
-    <div className="wrapper">
-
-    <span className="bg-animate"></span>
-    <span className="bg-animate2"></span>
-
-      <div className="form-box login">
-      <FaUser className="use"/>
-
-      <h2>Login Page</h2>
-        <form className="my form">
-          <div className="input-box">
-            <input type="text" required  autoComplete="new email"/>
-            <label>Email</label>
-            <FaUser className="pio"/>
+    <div className={`containers ${isSignUp ? 'active' : ''} `}>
+      <div className='form-container sign-up'>
+        <form>
+          <h1>Create Account</h1>
+          <div className='social-icons'>
+            <a href='/' className='social-icon'>
+              <FaFacebook className='my-auto mx-auto' />
+            </a>
+            <a href='/' className='social-icon'>
+              <FaTwitter className='my-auto mx-auto' />
+            </a>
+            <a href='/' className='social-icon'>
+              <FaGoogle className='my-auto mx-auto' />
+            </a>
+            <a href='/' className='social-icon'>
+              <FaLinkedin className='my-auto mx-auto' />
+            </a>
           </div>
-          <div className="input-box">
-            <input type="password" required  autoComplete="new password"/>
-            <label>Password</label>
-            <FaUnlockAlt  className="pio"/>
-
-          </div>
-          <button type="submit" className="btn">Login</button>
-          <div className="reglnk">
-            <p>Don't have an account? <a  href ="/signup" className="register">Login</a></p>
-          </div>
+          <span>or use your email for registration</span>
+          <input type='text' placeholder='Name' />
+          <input type='email' placeholder='Email' />
+          <input type='password' placeholder='Password' />
+          <button>Sign Up</button>
         </form>
       </div>
-      <div className="info-text login">
-        <h2>Welcome Back</h2>
-        <p>
-          lorem
-        </p>
+      <div className='form-container sign-in'>
+        <form>
+          <h1>Sign In</h1>
+          <div className='social-icons'>
+          <a href='/' className='social-icon'>
+              <FaFacebook className='my-auto mx-auto' />
+            </a>
+            <a href='/' className='social-icon'>
+              <FaTwitter className='my-auto mx-auto' />
+            </a>
+            <a href='/' className='social-icon'>
+              <FaGoogle className='my-auto mx-auto' />
+            </a>
+            <a href='/' className='social-icon'>
+              <FaLinkedin className='my-auto mx-auto' />
+            </a>
+          </div>
+          <span>or use your email password</span>
+          <input type='email' placeholder='Email' />
+          <input type='password' placeholder='Password' />
+          <a href='/'>Forget Your Password?</a>
+          <button>Sign In</button>
+        </form>
+      </div>
+      <div className='toggle-container'>
+        <div className='toggle'>
+          <div className='toggle-panel toggle-left'>
+            <h1>Welcome Back!</h1>
+            <p>Enter your personal details to use all site features</p>
+            <button className='hidden' onClick={() => setIsSignUp(false)}>
+              Sign In
+            </button>
+          </div>
+          <div className='toggle-panel toggle-right'>
+            <h1>Hello, Friend!</h1>
+            <p>Register with your personal details to use all site features</p>
+            <button className='hidden' onClick={() => setIsSignUp(true)}>
+              Sign Up
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-    </div>
+  )
+}
 
-  );
-};
-
-export default Login;
+export default Login
