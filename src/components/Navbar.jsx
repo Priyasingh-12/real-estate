@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from "../assets/logo.png";
 import { TfiAlignJustify } from "react-icons/tfi";
 import { Link } from "react-router-dom";
@@ -55,13 +55,13 @@ const Navbar = () => {
         </div>
         <nav className={toggle ? "showNav" : "hideNav"}>
           <ul>
-            <li>Home</li>
-            <li>Sell</li>
-            <li>Buy</li>
-            <li>Rent</li>
-            <li>Mortgage</li> 
-            <li>Agent</li> 
-            <li>360° tour</li> 
+          <li><a href="/Home">Home</a></li>
+            <li><a href="/">Sell</a></li>
+            <li><a href="/">Buy</a></li>
+            <li><a href="/">Rent</a></li>
+            <li><a href="/">Mortgage</a></li>
+            <li><a href="/">Agent</a></li>
+            <li><a href="/">360° tour</a></li>
           </ul>
         </nav>
         
@@ -81,8 +81,8 @@ const Navbar = () => {
               </>
             ) : (
               <>
-                <Link to="/login">Login</Link>
-                <Link to="/register">Signup</Link>
+                <Link to="/Login">Login</Link>
+                <Link to="/Login">Signup</Link>
               </>
             )}
           </div>

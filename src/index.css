@@ -1,12 +1,13 @@
 *{
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
 }
 body {
   background-image: url("https://img.freepik.com/premium-photo/3d-rendering-mini-blue-house-arrange-blue-background-money-house-real-estate-investment-mortgage-concept_47274-359.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1712793600&semt=ais"  );
   background-repeat: no-repeat;
   background-size: cover;
-
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
