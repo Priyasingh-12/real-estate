@@ -1,8 +1,8 @@
 
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from './route/Home';
- import Login from './route/Login';
+import Home from './route/home/Home';
+ import Login from './route/login/Login';
 
 import './App.css';
 

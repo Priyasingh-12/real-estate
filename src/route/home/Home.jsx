@@ -1,8 +1,9 @@
 import React from "react";
-import homo from "../assets/homo.jpg";
-import greenhouse from "../assets/greenhouse.jpg";
-import myhome from "../assets/myhome.jpg";
-import bal from "../assets/bal.png";
+import homo from "../../assets/homo.jpg";
+import greenhouse from "../../assets/greenhouse.jpg";
+import myhome from "../../assets/myhome.jpg";
+import bal from "../../assets/bal.png";
+import Chatbot from './Chatbot';
 
 import "./home.css";
 
@@ -13,7 +14,7 @@ const Home = () => {
         <div className="LeftTitle">
           Let Us Help You <br /> To Choose <br /> The Best.
         </div>
-        <div class="LeftSubTitle">
+        <div className="LeftSubTitle">
           In expecting It is a long established fact that a reader will be
           distracted by the readable content of a page. Many desktop publishing
           packages and web page editors now use Lorem Ipsum as their default
@@ -79,7 +80,10 @@ const Home = () => {
           />
         </div>
       </div>
+      <Chatbot/>
     </div>
+
+
   );
 };
 
