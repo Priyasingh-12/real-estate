@@ -3,7 +3,7 @@ import { FaFacebook } from 'react-icons/fa6'
 import { FaGoogle } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa6'
 import { FaTwitter } from 'react-icons/fa'
-import './style.css' //
+import './style.css' 
 
 function Login () {
   const [isSignUp, setIsSignUp] = useState(false)

@@ -3,6 +3,8 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './route/home/Home';
  import Login from './route/login/Login';
+ import Footer from './components/Footer';
+
 
 import './App.css';
 
@@ -22,6 +24,8 @@ function App() {
 
 
     </Routes>
+    <Navbar  />
+
     </BrowserRouter>
   
   );
